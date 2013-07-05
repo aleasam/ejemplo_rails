@@ -37,3 +37,23 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'bootstrap-sass'
+gem 'cancan'
+gem 'devise'
+gem 'figaro'
+gem 'libv8'
+gem 'rolify'
+gem 'simple_form'
+
+group :assets do
+  gem 'therubyracer', :platform=>:ruby, :require=>"v8"
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+end
+
